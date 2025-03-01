@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("imgcover.png");
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* Art Section */
+.art-section {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 50px;
+    position: relative;
+    flex-direction: column; /* Stack image and text vertically */
+    text-align: center; /* Center text */
+}
+
+.art-image {
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    margin-top: 4%; /* Space between image and text */
+    margin-right: 300px;
+}
+
+.art-details {
+    max-width: 400px;
+    text-align: center; /* Center text */
+}
+
+.art-details h1 {
+    font-size: 5.5rem;
+    margin-bottom: 10px;
+}
+
+.art-details p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+.date {
+    font-size: 1rem;
+    margin-bottom: 300px;
+}
+.detail {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 0%;
+    margin-left: 138px;
+}
+
+.contact-button:hover {
+    background-color: #444;
+}
+
+/* Close Icon */
+.close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: #000;
+}
+
+.close-icon:hover {
+    color: #ff0000;
+}
+
+/* Responsive */
+@media (min-width: 769px) {
+    .art-section {
+        flex-direction: row; /* Image and text side by side on larger screens */
+        text-align: left;
+    }
+
+    .art-details {
+        margin-left: 30px;
+        text-align: left;
+    }
+
+    .art-image {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .art-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 100%;
+    }
+
+    .art-details {
+        margin: 20px 0 0 0;
+    }
+
+    .art-image {
+        max-width: 100%;
+    }
+}

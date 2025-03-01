@@ -1,0 +1,129 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: "Inter";
+    color: #333333;
+    background-image: url('art.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh;
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: #111111;
+    padding: 10px 0;
+}
+
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+}
+
+.nav-menu li {
+    margin: 0 100px; 
+    min-width: 100px; 
+    text-align: center; 
+}
+
+.nav-menu a {
+    display: block; 
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #ffc400d8; /* Change color sa  text once ma point ang arrow */
+}
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px); /* Adjust for the height of the navbar */
+}
+
+.contact-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 1100px;
+    height: 660px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.contact-container p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Updated Input Styles */
+input[type="email"], textarea {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #2b2b2b;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    resize: none; /* Disable resizing for textarea */
+    line-height: 1.5;
+    height: 10px; 
+    width: 850px;
+}
+
+textarea {
+    height: 350px;
+    width: 850px;
+}
+
+/* Submit Button Styles */
+button {
+    width: 150px;
+    padding: 15px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

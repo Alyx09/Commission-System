@@ -1,0 +1,238 @@
+body {
+    font-family: "Inter";
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('art.jpg'); 
+    
+}
+
+nav {
+    background-color: #111111;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+}
+
+.nav-menu li {
+    margin: 0 100px; 
+    min-width: 100px; 
+    text-align: center; 
+}
+
+.nav-menu a {
+    display: block; 
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px; 
+    transition: color 0.3s; 
+}
+
+.nav-menu a:hover {
+    color: #ffc400d8; 
+}
+
+
+.image-container { /* Sizez Sa image */
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 98vh;               
+    width: 192vh;        
+}
+
+.responsive-image {
+    width: 80%;             /* Set width to 80% of the container */
+    max-width: 800px;      /* Maximum width of the image */
+    height: auto;          /* Maintain aspect ratio */
+    border-radius: 8px;    /* Optional: rounded corners */
+}
+
+/* Media query for larger screens (desktop) */
+@media (min-width: 1024px) {
+    .responsive-image {
+        width: 600px;      /* Fixed width for desktop */
+        height: auto;      /* Maintain aspect ratio */
+    }
+}
+/* Second section */
+
+.rectangle6
+{
+background-color:#020202;
+height:533px;
+width:1459px;
+}
+
+.image1
+{
+
+height:539px;
+width:1000px;
+height:539px;
+left:903px;
+top:1026px;
+position:absolute;
+}
+
+.text1 {
+    color: #ffffff;
+    text-align: right; /* Change to right alignment */
+    vertical-align: text-top;
+    font-size: 88px;
+    font-family: 'Bebas Neue';
+    line-height: 200.00000476837158px;
+    border-style: hidden;
+    outline: none;
+    width: 800px;
+}
+.text2 {
+    color: #ffffff;
+    text-align: left; 
+    vertical-align: top; 
+    font-size: 20px; 
+    font-family: "Inter", sans-serif; 
+    line-height: 1.6; 
+    border-style: hidden; 
+    outline: none; 
+    width: 700px; 
+    height: auto; 
+    margin: 0px 130px; /* Top/Bottom 50px, Left/Right 20px */
+    padding: 10px; /* Add padding for internal spacing */
+}
+.rectangle7{
+
+    
+    height:60px;
+    width:232px;
+    border-radius:7px;
+    margin: 20px 140px;
+}
+
+.nav-button {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Button background color */
+    color: #000000; /* Text color */
+    padding: 15px 30px; /* Button padding */
+    text-decoration: none; /* Remove underline from text */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background transition */
+    font-size: 20px; /* Button text size */
+}
+
+.rectangle8
+{
+height:60px;
+width:255px;
+filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+border-radius:3px;
+margin: 89px 699px;
+}
+
+
+.nav-button2 {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Button background color */
+    color: #ffffff; /* Text color */
+    padding: 10px 20px; /* Adjust padding to fit text better */
+    text-decoration: none; /* Remove underline from text */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background transition */
+    font-size: 20px; /* Button text size */
+    display: inline-block; /* Make button size fit its content */
+    border: 1px solid transparent; /* Optional: add border for better visibility */
+}
+
+/* 3rd Section */
+
+/* Container for the entire card and social link section */
+.card-social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Takes at least full viewport height */
+    background: #f0f0f0;
+    padding: 20px; /* Spacing around the entire content */
+    margin-top: 20px; /* Adjust top margin */
+    margin-left: 200spx; /* Adjust left margin */
+}
+/* Style for the cards container */
+.cards {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 20px;
+    margin: 80px 280px;
+}
+
+/* Style for each card */
+.card img {
+    width: 400px;
+    height: auto;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.973);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for cards */
+.card img:hover {
+    transform: translateY(-5px);
+}
+
+/* Container for social links */
+.social-links {
+    display: flex;
+    gap: 115px;
+    padding: 10px; /* Padding around social icons */
+    margin: 100px 515px;
+}
+
+/* Style for social media icons */
+.social-links a img {
+    width: 100px;
+    height: auto;
+}
+
+/* Responsive design adjustments for smaller screens */
+@media (max-width: 600px) {
+    .cards {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+.text3 {
+    color: #000000;
+    text-align: center; /* Change to right alignment */
+    vertical-align: text-top;
+    font-size: 70px;
+    font-family: 'Bebas Neue';
+    line-height: 200.00000476837158px;
+    border-style: hidden;
+    outline: none;
+    width: 800px;
+    margin: 90px 559px; 
+    text-shadow: 0 5px 15px rgba(0,0,0,0.25);
+    
+    
+}
+footer {
+    color: #ffffff;
+    text-align: center; /* Corrected for right alignment */
+    font-size: 12px; /* Corrected unit from 'x' to 'px' */
+    line-height: 1; /* Setting a reasonable line height */
+    border: none; /* Simplified border style to 'none' */
+    width: 400px;
+    margin: 10px 750px; /* Centered horizontally, top margin is 200px */
+    padding: 20px; /* Optional: added padding for better text display */
+}
